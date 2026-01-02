@@ -1,10 +1,7 @@
 import mongoose from "mongoose";
 
 async function dbConnection() {
-  await mongoose.connect(
-    "mongodb://myappuser:pass%40123@34.234.100.61:27017/myappdb"
-  );
-
+  await mongoose.connect("mongodb://myappuser:pass123@13.218.84.226:27017/myappdb?authSource=admin");
   console.log("MongoDB connected successfully");
 }
 
